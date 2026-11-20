@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100dvh;
+  background: #0b1020;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.toast-in {
+  animation: toast-in 0.22s ease-out;
+}
+
+input[type='range'] {
+  accent-color: #5b8cff;
+}
+
+@keyframes hit-pop {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.hit-pop {
+  animation: hit-pop 0.28s ease-out forwards;
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.7));
+}
+
+@keyframes hurt-flash {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hurt-flash {
+  animation: hurt-flash 0.55s ease-out forwards;
+  background: radial-gradient(ellipse at center, rgba(255, 0, 0, 0) 45%, rgba(220, 30, 30, 0.65) 100%);
+  pointer-events: none;
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+.env
+.env.*
+.circle
+recovery_file*
+console.jsonl
+traces.jsonl
+*.log
+Arc-city/
+contracts/out
+contracts/cache
+cache
+out
+lib
+.DS_Store
