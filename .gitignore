@@ -10,7 +10,7 @@ traces.jsonl
 Arc-city/
 contracts/out
 contracts/cache
-cache
-out
-lib
+/cache
+/out
+/lib
 .DS_Store
